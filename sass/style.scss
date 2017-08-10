@@ -1,0 +1,116 @@
+$primary-color: navy;
+$primary-font: 'Saira', sans-serif;
+
+@media (max-width: 600px) {
+  form{
+    min-width:80%;
+  }
+}
+
+@media (min-width: 601px) {
+  form{
+    min-width:50%;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-family: $primary-font;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 300;
+  text-align: left;
+  // min-width: 50%;
+}
+
+fieldset {
+  border: 1px solid $primary-color;
+  margin-bottom: 20px;
+} 
+
+legend {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold; 
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.form-input-group {
+  position: relative;
+  margin: 0 5%;
+}
+
+.form-input-group label {
+  position: absolute;
+  top: 25px;
+}
+.form-radio-group{
+  margin-left:5%;
+}
+
+.form-select-group {
+  margin-left: 5%;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+
+.form-input-group .required{
+  position: absolute;
+  color: red;
+  left: -14px;
+  top: 27px;
+}
+
+.form-select-group .required, .form-radio-group .required{
+  position: absolute;
+  color: red;
+  left: 41px;
+}
+
+label {
+  font-size: 14px;
+  color: $primary-color;
+}
+
+.form-input-group input{
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  outline: none;
+  padding: 50px 10px 6px;
+  border:none;
+  border-bottom:1px solid #757575;
+  
+}
+
+.form-input-group input:focus {
+  border-bottom: 1px solid lightblue;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease 
+}
+
+input[type="submit"] {
+  font-size: 18px;
+  padding: 20px;
+}
