@@ -40,6 +40,11 @@ legend {
   flex-flow: column nowrap;
   align-items: center; }
 
+input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-appearance: none; }
+
 .form-input-group {
   position: relative;
   margin: 0 5%; }
@@ -56,16 +61,14 @@ legend {
   margin-top: 12px;
   margin-bottom: 18px; }
 
-.form-input-group .required {
-  position: absolute;
-  color: red;
-  left: -14px;
-  top: 27px; }
+.form-select-group select {
+  width: 50%; }
 
-.form-select-group .required, .form-radio-group .required {
-  position: absolute;
+.required {
   color: red;
-  left: 41px; }
+  position: relative;
+  margin-left: -16px;
+  margin-right: 10px; }
 
 label {
   font-size: 14px;

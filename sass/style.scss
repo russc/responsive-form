@@ -32,7 +32,6 @@ form {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-weight: 300;
   text-align: left;
-  // min-width: 50%;
 }
 
 fieldset {
@@ -55,6 +54,12 @@ legend {
   align-items: center;
 }
 
+input {
+  -webkit-border-radius: 0; 
+  -moz-border-radius: 0; 
+  -webkit-appearance: none;
+}
+
 .form-input-group {
   position: relative;
   margin: 0 5%;
@@ -74,17 +79,15 @@ legend {
   margin-bottom: 18px;
 }
 
-.form-input-group .required{
-  position: absolute;
-  color: red;
-  left: -14px;
-  top: 27px;
+.form-select-group select {
+  width:50%;
 }
 
-.form-select-group .required, .form-radio-group .required{
-  position: absolute;
-  color: red;
-  left: 41px;
+.required{
+  color: red; 
+  position: relative;
+  margin-left: -16px;
+  margin-right: 10px
 }
 
 label {
