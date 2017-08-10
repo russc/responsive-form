@@ -57,7 +57,6 @@ legend {
 input {
   -webkit-border-radius: 0; 
   -moz-border-radius: 0; 
-  -webkit-appearance: none;
 }
 
 .form-input-group {
@@ -76,11 +75,12 @@ input {
 .form-select-group {
   margin-left: 5%;
   margin-top: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .form-select-group select {
-  width:50%;
+  width:95%;
+  margin-top: 15px;
 }
 
 .required{
